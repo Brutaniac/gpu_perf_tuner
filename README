@@ -1,4 +1,4 @@
 This is a (hardly overengineered) utility tool to manage GPU temperature for GPUs which are being used in varying temperature conditions of unattended areas lacking air conditioning. 
 Supported GPU management interfaces: 
-- AMD ROCm 17.30 for linux 
+- amdgpu-pro-17.30-465504 for linux 
 
