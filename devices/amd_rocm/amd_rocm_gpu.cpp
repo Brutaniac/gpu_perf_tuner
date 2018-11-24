@@ -62,7 +62,7 @@ std::string amd_rocm_spec::process_action(size_t device_id, device_action const 
         return boost::str(
                 boost::format(set_state()) 
                 % device_id 
-                % 1 
+                % 0 
                 % int(255 * normal_fan) 
             );
     }
@@ -73,7 +73,7 @@ std::string amd_rocm_spec::process_action(size_t device_id, device_action const 
         return boost::str(
                 boost::format(set_state()) 
                 % device_id 
-                % (power_level - 1)
+                % (power_level > 0 ? power_level - 1 : 0)
                 % int(255 * normal_fan) 
             );
     }
